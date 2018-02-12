@@ -1,12 +1,13 @@
+Accessibility Success Story: Dig Dog
+---
+
 Happy Monday, DXD!
 
-I stumbled across this fun little iOS game a few days ago, but the story behind it truly piqued my interest.
+A few days ago I stumbled across a fun little casual iOS game called Dig Dog, but the story behind it is even more fascinating.
 
-With a dream to be a professional game developer, a man with severe RSI was able to completely design and code a successful new game without his hands, using only voice and head-tracking software. This includes the programming (and artwork!) for the game all by this one-man team.
+A game developer diagnosed with severe RSI was able to completely design and code a successful game without his hands, using custom voice and head-tracking software. This includes the programming (and artwork!), which is pretty mind-blowing when you watch the video.
 
-Using new and brittle tools, he's now launched this casual game across many platforms including iOS, Xbox, Windows, and Mac. I happily paid the $3 to support his dream and have very much enjoyed the experience on my phone thus far.
-
-I thought Judith and others might find this story interesting as well -- you can get the whole read over at ArsTechnica (including video of the technology Rusty Moyher used):
+I thought Judith and others might find this story interesting -- you can get the whole read over at ArsTechnica (including video of the technology Rusty Moyher used):
 
 https://arstechnica.com/gaming/2018/02/coding-without-a-keystroke-the-hands-free-creation-of-a-full-video-game/
 
