@@ -1,70 +1,520 @@
----
-layout: post-index
-title: Latest Posts
-description: "Describe this nonsense."
-tags: [Jekyll, theme, themes, responsive, blog, modern]
-image:
-  feature: abstract-1.jpg
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
----
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Stephen Zito - Product Design Portfolio</title>
+        <!--Meta-->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta property="og:title" content="Stephen Zito - Product Designer" />
+        <meta property="og:description" content="Product Design Portfolio" />
+        <meta property="og:url" content="https://stzito.github.io/" />
+        <meta property="og:site_name" content="Stephen Zito - Product Design Portfolio" />
+        <meta property="og:image" content="https://stzito.github.io/thumb.jpg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-{% for post in paginator.posts %}
-<article class="hentry">
-  <header>
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}"><a href="{{ site.url }}{{ post.url }}">{{ post.date | date: "%B %d, %Y" }}</a></time></span><span class="author vcard"><span class="fn"><a href="{{ site.url }}/about/" title="About {{ site.owner.name }}">{{ site.owner.name }}</a></span></span>{% if site.disqus_shortname and post.comments %}&nbsp; &bull; &nbsp;<span class="entry-comments"><a href="{{ site.url }}{{ post.url }}#disqus_thread">Comment</a></span>{% endif %}
-      {% if site.reading_time %}
-      <span class="entry-reading-time pull-right">
-        <i class="fa fa-clock-o"></i>
-        {% assign readtime = post.content | number_of_words | divided_by:site.words_per_minute %}
-        Reading time ~{% if readtime <= 1 %}1 minute{% else %}{{ readtime }} minutes{% endif %}
-      </span><!-- /.entry-reading-time -->
-      {% endif %}
-    </div><!-- /.entry-meta -->
-    {% if post.link %}
-      <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}"><i class="fa fa-angle-double-right"></i></a> <a href="{{ post.link }}">{{ post.title }}</a></h1>
-    {% else %}
-      <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a></h1>
-    {% endif %}
-  </header>
-  <div class="entry-content">
-    {{ post.content }}
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-{% endfor %}
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-114x114.png">
 
-<div class="pagination">
-  {% if paginator.previous_page %}
-    {% if paginator.previous_page == 1 %}
-      <a href="{{ site.url }}" class="btn">Previous</a>
-    {% else %}
-      <a href="{{ site.url }}/page{{ paginator.previous_page }}" class="btn">Previous</a>
-    {% endif %}
-  {% else %}
-    Previous
-  {% endif %}
-  <ul class="inline-list">
-    <li>
-      {% if paginator.page == 1 %}
-        <span class="current-page">1</span>
-      {% else %}
-        <a href="{{ site.url }}">1</a>
-      {% endif %}
-    </li>
-    {% for count in (2..paginator.total_pages) %}
-      <li>
-        {% if count == paginator.page %}
-          <span class="current-page">{{ count }}</span>
-        {% else %}
-          <a href="{{ site.url }}/page{{ count }}">{{ count }}</a>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
-  {% if paginator.next_page %}
-    <a href="{{ site.url }}/page{{ paginator.next_page }}" class="btn">Next</a>
-  {% else %}
-    Next
-  {% endif %}
-</div><!-- /.pagination -->
+        <!-- Google Fonts -->
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins%3A400%2C300%7CLibre+Baskerville%3Aregular%2Citalic%2C700' type='text/css' media='all' />
+
+        <!-- Bootstrap CSS -->
+        <link rel='stylesheet' href='css/bootstrap.css' type='text/css' media='screen' />
+
+        <!-- Font Icon CSS -->
+        <link rel='stylesheet' href='css/font-awesome.min.css' type='text/css' media='screen' />
+
+        <!-- Owl Carousel Plugin CSS -->
+        <link rel='stylesheet' href='css/owl.carousel.css' type='text/css' media='screen' />
+
+        <!-- Lightbox Plugin CSS -->
+        <link rel='stylesheet' href='css/photoswipe.css' type='text/css' media='screen' />
+
+        <!-- Lightbox Plugin Skin CSS -->
+        <link rel='stylesheet' href='css/skin/photoswipe/default/default-skin.css' type='text/css' media='screen' />
+
+        <!-- Air. Theme Elements CSS -->
+        <link rel='stylesheet' href='css/pagebuild.css' type='text/css' media='screen' />
+
+        <!-- Air. Theme Main CSS -->
+        <link rel='stylesheet' href='css/style.css' type='text/css' media='screen' />
+
+    <!-- IE hack -->
+    <!--[if lte IE 9]>
+	<link rel='stylesheet' id='cssie9'  href='css/ie.css' type='text/css' media='screen' />
+	<![endif]-->
+
+	<!--[if lte IE 9]>
+	<script type="text/javascript" src="js/ie.js"></script>
+	<![endif]-->
+
+	<!--[if lte IE 8]>
+	<div style="width: 100%;" class="messagebox_orange">Your browser is obsolete and does not support this webpage. Please use newer version of your browser or visit <a href="http://www.ie6countdown.com/" target="_new">Internet Explorer 6 countdown page</a>  for more information. </div>
+	<![endif]-->
+
+	</head>
+
+    <body class="page page-id-281 page-template-default default-dark-logo pswp-light-skin responsive-ux page-template-masonry-body page-template-intro-above-list-body navi-hide show-top-space dark-logo header-sticky preload">
+
+        <!--Page Loader-->
+        <div class="page-loading fullscreen-wrap visible">
+            <div class="spinner">
+                <div class="spinner__item1"></div>
+                <div class="spinner__item2"></div>
+                <div class="spinner__item3"></div>
+            </div>
+        </div>
+
+        <!--Audio Player-->
+        <div id="jquery_jplayer" class="jp-jplayer"></div>
+
+        <!--Main wrap-->
+        <div id="wrap-outer">
+
+            <!--Header-->
+            <header id="header" class="">
+
+                <div id="header-main">
+
+                    <div class="container-fluid">
+
+                        <span id="navi-trigger">
+                            <span class="navi-trigger-text">
+                                <span class="navi-trigger-text-menu navi-trigger-text-inn">Menu</span>
+                                <span class="navi-trigger-text-close navi-trigger-text-inn">Close</span>
+                            </span>
+                            <span class="navi-trigger-inn">
+                                <span class="navi-trigger-hamberg-line navi-trigger-hamberg-line1"></span>
+                                <span class="navi-trigger-hamberg-line navi-trigger-hamberg-line2"></span>
+                                <span class="navi-trigger-hamberg-line navi-trigger-hamberg-line3"></span>
+                            </span>
+                        </span>
+
+
+                        <div class="navi-logo">
+
+                            <div class="logo-wrap">
+                                <div id="logo-h1">
+                                    <a href="index.html" title="Stephen Zito - Product Designer">
+                                        <h3>Stephen Zito</h3>
+                                    </a>
+                                </div>
+                            </div><!--End logo wrap-->
+
+                        </div>
+
+                    </div>
+
+                </div><!--End header main-->
+
+            </header>
+
+            <div id="menu-panel">
+
+                <div class="menu-panel-inn fullscreen-wrap">
+
+                    <nav id="navi">
+
+                        <div id="navi-wrap" class="menu-navi-wrap">
+
+                            <ul class="menu clearfix">
+                                <li class="menu-item current-menu-item current_page_item">
+                                    <a>Home</a>
+                                </li>
+                                <li id="menu-item-246" class="menu-item"><a href="StephenZito_Resume.pdf">Résumé</a></li>
+                                <li id="menu-item-247" class="menu-item"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#116;&#46;&#122;&#105;&#116;&#111;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">Contact</a></li>
+                            </ul>
+
+                        </div>
+
+                    </nav>
+
+                    <div id="menu-panel-bottom" class="container-fluid">
+
+                        <div class="menu-panel-bottom-right col-md-9 col-sm-9 col-xs-9">
+
+                            <div class="socialmeida-mobile">
+
+                                <ul class="socialmeida clearfix">
+
+                                    <li class="socialmeida-li">
+                                        <a title="LinkedIn" href="https://www.linkedin.com/in/stephen-zito/" class="socialmeida-a" target="_blank">
+                                            <span class=""></span> <span class="socialmeida-text">LinkedIn</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="socialmeida-li">
+                                        <a title="Twitter" href="https://twitter.com/stzito" class="socialmeida-a" target="_blank">
+                                            <span class=""></span> <span class="socialmeida-text">Twitter</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div><!--End #menu-panel-->
+
+
+            <!-- Main Content Wrap -->
+    		<div id="wrap">
+
+                <!-- Main Content : List, text content ... -->
+    	        <div id="content">
+
+                    <div class="content_wrap_outer fullwrap-layout">
+
+                            <div id="content_wrap">
+
+                                <!--Introduction-->
+                                <section class="ux-portfolio-template-intro container">
+                                    <h2>Welcome!</h2>
+                                    <!--<h4>UX/UI Design</h4>-->
+                                    <p style="font-size: 20px;">I’m <span style="font-weight: bold;">Stephen Zito</span>, a Product & UX/UI Designer from the SF Bay Area, experienced in creating elegant graphics and innovative user interfaces across responsive web, mobile, and proprietary technologies.</p>
+                                    <p style="font-size: 20px;">I'm passionate about collaborating with diverse groups of designers, engineers, stakeholders, marketers, and users to make technology accessible and enjoyable for humans from all walks of life.</p>
+                                </section>
+
+                                <!--Portfolio Template-->
+                                <div class="container-masonry ux-portfolio-spacing-40 ux-portfolio-2col container ux-has-filter filter-left" data-col="2" data-spacer="40" data-template="intro-above">
+
+                                    <!--Filter-->
+                                    <div class="clearfix filters">
+
+                                        <ul class="filters-ul container">
+                                            <li class="filters-li active"><a id="all" class="filters-a" href="#" data-filter="*">All<span class="filter-num">10</span></a></li>
+                                            <li class="filters-li"><a class="filters-a" data-filter=".filter_product" href="#" data-catid="1" data-pageid="123">Product Design<span class="filter-num">9</span></a></li>
+                                            <li class="filters-li"><a class="filters-a" data-filter=".filter_ux" href="#" data-catid="2" data-pageid="123">UX Design<span class="filter-num">10</span></a></li>
+                                            <li class="filters-li"><a class="filters-a" data-filter=".filter_ui" href="#" data-catid="3" data-pageid="123">UI Design<span class="filter-num">5</span></a></li>
+                                            <li class="filters-li"><a class="filters-a" data-filter=".filter_web" href="#" data-catid="4" data-pageid="123">Web Design<span class="filter-num">1</span></a></li>
+                                            <li class="filters-li"><a class="filters-a" data-filter=".filter_branding" href="#" data-catid="5" data-pageid="123">Branding<span class="filter-num">1</span></a></li>
+                                        </ul>
+
+                                    </div><!--End filter-->
+
+                                    <!--Portfolio Listing-->
+                                    <div class="masonry-list grid-list grid-mask-filled-left">
+
+
+
+
+                                        <section class="grid-item filter_ux filter_ui filter_product filter_featured filter_works filter_post-format-gallery" data-postid="170">
+
+                                            <div class="grid-item-inside" >
+                                                <div class="grid-item-con">
+                                                    <a href="survey-app.html" title="Survey App Prototype" class="grid-item-mask-link grid-item-open-url"></a>
+
+                                                    <div class="grid-item-con-text">
+                                                        <span class="grid-item-cate"><a href="#" title="View all posts in UI Design" class="grid-item-cate-a" data-filter=".filter_ui">UI Design</a> <span class="grid-item-cate"><a href="#" title="View all posts in UX Design" class="grid-item-cate-a" data-filter=".filter_ux">UX Design</a> <a href="#" title="View all posts in Product Design" class="grid-item-cate-a" data-filter=".filter_product">Product Design</a></span>
+                                                        <h2 class="grid-item-tit"><a href="survey-app.html" title="Survey App Prototype" class="grid-item-tit-a">Survey App Prototype</a></h2>
+                                                    </div>
+                                                </div>
+
+                                                <div class="brick-content ux-lazyload-wrap" style=" padding-top: 75.384615384615%;">
+                                                    <div class="ux-lazyload-bgimg ux-background-img" data-bg="img/thumbs/survey-app.jpg"></div>
+                                                </div>
+
+                                            </div><!--End inside-->
+
+                                        </section>
+
+
+                                        <section class="grid-item filter_ux filter_ui filter_product filter_works filter_post-format-gallery" data-postid="198">
+                                            <div class="grid-item-inside" >
+                                                <div class="grid-item-con">
+                                                    <a href="tapjoy-marketplace.html" title="Tapjoy Marketplace" class="grid-item-mask-link grid-item-open-url"></a>
+
+                                                    <div class="grid-item-con-text">
+                                                        <span class="grid-item-cate"><a href="#" title="View all posts in Product Design" class="grid-item-cate-a" data-filter=".filter_product">Product Design</a> <a href="#" title="View all posts in UX Design" class="grid-item-cate-a" data-filter=".filter_ux">UX Design</a> <a href="#" title="View all posts in UI Design" class="grid-item-cate-a" data-filter=".filter_ui">UI Design</a></span>
+                                                        <h2 class="grid-item-tit"><a href="tapjoy-marketplace.html" title="Tapjoy Marketplace" class="grid-item-tit-a">Tapjoy Marketplace</a></h2>
+                                                    </div>
+                                                </div>
+
+                                                <div class="brick-content ux-lazyload-wrap" style=" padding-top: 75.384615384615%;">
+                                                    <div class="ux-lazyload-bgimg ux-background-img" data-bg="img/thumbs/tapjoy-b2c.jpg"></div>
+                                                </div>
+
+                                            </div><!--End inside-->
+
+                                        </section>
+
+
+                                        <section class="grid-item filter_ux filter_ui filter_web filter_branding filter_featured filter_works filter_post-format-gallery" data-postid="170">
+
+                                            <div class="grid-item-inside" >
+                                                <div class="grid-item-con">
+                                                    <a href="cccm.html" title="CCCM" class="grid-item-mask-link grid-item-open-url"></a>
+
+                                                    <div class="grid-item-con-text">
+                                                        <span class="grid-item-cate"><a href="#" title="View all posts in UX Design" class="grid-item-cate-a" data-filter=".filter_ux">UX Design</a> <span class="grid-item-cate"><a href="#" title="View all posts in Web Design" class="grid-item-cate-a" data-filter=".filter_web">Web Design</a> <a href="#" title="View all posts in Branding" class="grid-item-cate-a" data-filter=".filter_branding">Branding</a></span>
+                                                        <h2 class="grid-item-tit"><a href="cccm.html" title="CCCM" class="grid-item-tit-a">CCCM</a></h2>
+                                                    </div>
+                                                </div>
+
+                                                <div class="brick-content ux-lazyload-wrap" style=" padding-top: 75.384615384615%;">
+                                                    <div class="ux-lazyload-bgimg ux-background-img" data-bg="img/thumbs/cccm.jpg"></div>
+                                                </div>
+
+                                            </div><!--End inside-->
+
+                                        </section>
+
+                                        <section class="grid-item filter_ux filter_product filter_featured filter_works filter_post-format-gallery" data-postid="30">
+                                            <div class="grid-item-inside" >
+                                                <div class="grid-item-con">
+                                                    <a href="epiphanyeyewear.html" title="Epiphany Eyewear" class="grid-item-mask-link grid-item-open-url"></a>
+
+                                                    <div class="grid-item-con-text">
+                                                        <span class="grid-item-cate"><a href="#" title="View all posts in Product Design" class="grid-item-cate-a" data-filter=".filter_product">Product Design</a> <a href="#" title="View all posts in UX Design" class="grid-item-cate-a" data-filter=".filter_ux">UX Design</a></span>
+                                                        <h2 class="grid-item-tit"><a href="epiphanyeyewear.html" title="Epiphany Eyewear" class="grid-item-tit-a">Epiphany Eyewear</a></h2>
+                                                    </div>
+                                                </div>
+
+                                                <div class="brick-content ux-lazyload-wrap" style=" padding-top: 75.384615384615%;">
+                                                    <div class="ux-lazyload-bgimg ux-background-img" data-bg="img/thumbs/epiphanyeyewear.jpg"></div>
+                                                </div>
+
+                                            </div><!--End inside-->
+
+                                        </section>
+
+                                        <section class="grid-item filter_ux filter_product filter_works filter_post-format-gallery" data-postid="48">
+                                            <div class="grid-item-inside" >
+                                                <div class="grid-item-con">
+                                                    <a href="yougen.html" title="YouGen.tv" class="grid-item-mask-link grid-item-open-url"></a>
+
+                                                    <div class="grid-item-con-text">
+                                                        <span class="grid-item-cate"><a href="#" title="View all posts in Product Design" class="grid-item-cate-a" data-filter=".filter_product">Product Design</a> <a href="#" title="View all posts in UX Design" class="grid-item-cate-a" data-filter=".filter_ux">UX Design</a></span>
+                                                        <h2 class="grid-item-tit"><a href="yougen.html" title="YouGen.tv" class="grid-item-tit-a">YouGen.tv</a></h2>
+                                                    </div>
+                                                </div>
+
+                                                <div class="brick-content ux-lazyload-wrap" style=" padding-top: 75.384615384615%;">
+                                                    <div class="ux-lazyload-bgimg ux-background-img" data-bg="img/thumbs/yougen.jpg"></div>
+                                                </div>
+
+                                            </div><!--End inside-->
+
+                                        </section>
+
+                                        <section class="grid-item filter_ux filter_product filter_works filter_post-format-gallery" data-postid="97">
+                                            <div class="grid-item-inside" >
+                                                <div class="grid-item-con">
+                                                    <a href="teslamotors.html" title="Tesla Model S" class="grid-item-mask-link grid-item-open-url"></a>
+
+                                                    <div class="grid-item-con-text">
+                                                        <span class="grid-item-cate"><a href="#" title="View all posts in Product Design" class="grid-item-cate-a" data-filter=".filter_product">Product Design</a> <a href="#" title="View all posts in UX Design" class="grid-item-cate-a" data-filter=".filter_ux">UX Design</a> <a href="#" title="View all posts in UI Design" class="grid-item-cate-a" data-filter=".filter_ui">UI Design</a></span>
+                                                        <h2 class="grid-item-tit"><a href="teslamotors.html" title="Tesla Model S" class="grid-item-tit-a">Tesla Model S</a></h2>
+                                                    </div>
+                                                </div>
+
+                                                <div class="brick-content ux-lazyload-wrap" style=" padding-top: 75.384615384615%;">
+                                                    <div class="ux-lazyload-bgimg ux-background-img" data-bg="img/thumbs/teslamotors.jpg"></div>
+                                                </div>
+
+                                            </div><!--End inside-->
+
+                                        </section>
+
+
+                                        <section class="grid-item filter_ux filter_product filter_works filter_post-format-gallery" data-postid="16">
+                                            <div class="grid-item-inside" >
+                                                <div class="grid-item-con">
+                                                    <a href="tapjoy-b2b.html" title="Tapjoy Console Prototype" class="grid-item-mask-link grid-item-open-url"></a>
+
+                                                    <div class="grid-item-con-text">
+                                                        <span class="grid-item-cate"><a href="#" title="View all posts in Product Design" class="grid-item-cate-a" data-filter=".filter_product">Product Design</a> <a href="#" title="View all posts in UX Design" class="grid-item-cate-a" data-filter=".filter_ux">UX Design</a></span>
+                                                        <h2 class="grid-item-tit"><a href="tapjoy-b2b.html" title="Tapjoy Console Prototype" class="grid-item-tit-a">Tapjoy Console Prototype</a></h2>
+                                                    </div>
+                                                </div>
+
+                                                <div class="brick-content ux-lazyload-wrap" style=" padding-top: 75.384615384615%;">
+                                                    <div class="ux-lazyload-bgimg ux-background-img" data-bg="img/thumbs/tapjoy-b2b.jpg"></div>
+                                                </div>
+
+                                            </div><!--End inside-->
+
+                                        </section>
+
+                                        <section class="grid-item filter_ux filter_product filter_works filter_post-format-gallery" data-postid="16">
+                                            <div class="grid-item-inside" >
+                                                <div class="grid-item-con">
+                                                    <a href="tapjoy-badjrr.html" title="Badjrr Social Achievements" class="grid-item-mask-link grid-item-open-url"></a>
+
+                                                    <div class="grid-item-con-text">
+                                                        <span class="grid-item-cate"><a href="#" title="View all posts in Product Design" class="grid-item-cate-a" data-filter=".filter_product">Product Design</a> <a href="#" title="View all posts in UX Design" class="grid-item-cate-a" data-filter=".filter_ux">UX Design</a></span>
+                                                        <h2 class="grid-item-tit"><a href="tapjoy-badjrr.html" title="Badjrr Social Achievements" class="grid-item-tit-a">Badjrr Social Achievements</a></h2>
+                                                    </div>
+                                                </div>
+
+                                                <div class="brick-content ux-lazyload-wrap" style=" padding-top: 75.384615384615%;">
+                                                    <div class="ux-lazyload-bgimg ux-background-img" data-bg="img/thumbs/tapjoy-badjrr.jpg"></div>
+                                                </div>
+
+                                            </div><!--End inside-->
+
+                                        </section>
+
+                                        <section class="grid-item filter_ux filter_ui filter_product filter_works filter_post-format-gallery" data-postid="16">
+                                            <div class="grid-item-inside" >
+                                                <div class="grid-item-con">
+                                                    <a href="mallworld.html" title="Mallworld" class="grid-item-mask-link grid-item-open-url"></a>
+
+                                                    <div class="grid-item-con-text">
+                                                        <span class="grid-item-cate"> <a href="#" title="View all posts in Product Design" class="grid-item-cate-a" data-filter=".filter_product">Product Design</a> <a href="#" title="View all posts in UX Design" class="grid-item-cate-a" data-filter=".filter_ux">UX Design</a> <a href="#" title="View all posts in UI Design" class="grid-item-cate-a" data-filter=".filter_ui">UI Design</a></span>
+                                                        <h2 class="grid-item-tit"><a href="mallworld.html" title="Mallworld" class="grid-item-tit-a">Mallworld</a></h2>
+                                                    </div>
+                                                </div>
+
+                                                <div class="brick-content ux-lazyload-wrap" style=" padding-top: 75.384615384615%;">
+                                                    <div class="ux-lazyload-bgimg ux-background-img" data-bg="img/thumbs/mallworld.jpg"></div>
+                                                </div>
+
+                                            </div><!--End inside-->
+
+                                        </section>
+
+                                        <section class="grid-item filter_ux filter_ui filter_product filter_works filter_post-format-gallery" data-postid="16">
+                                            <div class="grid-item-inside" >
+                                                <div class="grid-item-con">
+                                                    <a href="fashiondesigner.html" title="Fashion Designer" class="grid-item-mask-link grid-item-open-url"></a>
+
+                                                    <div class="grid-item-con-text">
+                                                        <span class="grid-item-cate"> <a href="#" title="View all posts in Product Design" class="grid-item-cate-a" data-filter=".filter_product">Product Design</a> <a href="#" title="View all posts in UX Design" class="grid-item-cate-a" data-filter=".filter_ux">UX Design</a> <a href="#" title="View all posts in UI Design" class="grid-item-cate-a" data-filter=".filter_ui">UI Design</a></span>
+                                                        <h2 class="grid-item-tit"><a href="fashiondesigner.html" title="Fashion Designer" class="grid-item-tit-a">Fashion Designer</a></h2>
+                                                    </div>
+                                                </div>
+
+                                                <div class="brick-content ux-lazyload-wrap" style=" padding-top: 75.384615384615%;">
+                                                    <div class="ux-lazyload-bgimg ux-background-img" data-bg="img/thumbs/fashiondesigner.jpg"></div>
+                                                </div>
+
+                                            </div><!--End inside-->
+
+                                        </section>
+
+
+                                    </div><!--End masonry-list-->
+
+                                </div><!-- End container-masonry -->
+
+                            </div><!-- End #content_wrap-->
+
+                    </div><!-- End content_wrap_outer-->
+
+                </div><!--End #content-->
+
+                <footer id="footer" class="footer-cols-layout">
+
+                    <div class="footer-info">
+                        <div class="footer-container">
+
+                            <div class="span6">
+                                <div id="logo-footer">
+                                    <a href="index.html" title="Home">
+                                        <span style="font-weight: bold;">Stephen Zito</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="span6">
+                                <div class="footer-social">
+                                    <ul class="socialmeida clearfix">
+
+                                        <li class="socialmeida-li">
+                                            <a title="LinkedIn" href="https://www.linkedin.com/in/stephen-zito/" class="socialmeida-a" target="_blank">
+                                                <span class=""></span> <span class="socialmeida-text">LinkedIn</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="socialmeida-li">
+                                            <a title="Twitter" href="https://twitter.com/stzito" class="socialmeida-a" target="_blank">
+                                                <span class=""></span> <span class="socialmeida-text">Twitter</span>
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid back-top-wrap"><div id="back-top"></div></div>
+
+                </footer>
+
+            </div><!--End #wrap -->
+
+           <div class="video-overlay modal"><span class="video-close"></span></div><!--end video-overlay-->
+
+        </div><!--End wrap-outer-->
+
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+            <div class="pswp__bg"></div>
+
+            <div class="pswp__scroll-wrap">
+
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+
+                <div class="pswp__ui pswp__ui--hidden">
+
+                    <div class="pswp__top-bar">
+
+                        <div class="pswp__counter"></div>
+
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                              <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div>
+                    </div>
+
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                    </button>
+
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                    </button>
+
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- jQuery Library -->
+        <script type='text/javascript' src='js/jquery.min.js'></script>
+        <!-- Main Js Plugin -->
+        <script type='text/javascript' src='js/main.min.js'></script>
+        <!-- Air. Theme main js -->
+        <script type='text/javascript' src='js/custom.theme.js'></script>
+
+    </body>
+</html>
