@@ -1,0 +1,266 @@
+Onboarding:
+---
+
+https://uxplanet.org/design-of-onboarding-tutorial-greet-inform-engage-55c36c9b4999
+
+https://uxplanet.org/best-practices-for-onboarding-92f3a9f0b21a
+
+https://uxplanet.org/4-mobile-app-onboarding-flows-i-am-in-love-with-20e89eebc1f4
+
+https://icons8.com/articles/ux-design-onboarding-mobile-app/
+
+https://blogs.adobe.com/creativecloud/onboarding-tutorials-for-mobile-apps/
+
+https://www.justinmind.com/blog/5-inspiring-user-onboarding-examples-great-ux-better-user-engagement/
+
+https://www.mindinventory.com/blog/mobile-app-onboarding-best-practices/
+
+https://www.shopify.com/partners/blog/mobile-app-onboarding
+
+https://amplitude.com/measure-user-onboarding
+
+https://trainingindustry.com/articles/onboarding/how-do-you-measure-the-value-of-a-great-onboarding-program/
+
+https://design4users.com/design-for-onboarding-mobile-app-tutorials/
+
+https://usabilitygeek.com/mobile-user-onboarding-examples/
+
+https://usabilitygeek.com/mobile-app-onboarding-how-to-do-it-right/
+
+
+Rationale:
+---
+
+https://simplicable.com/new/rationale
+
+
+Illustration:
+---
+
+https://blog.tubikstudio.com/illustration-in-ui-art-in-action/
+
+
+Cognitive Psychology:
+---
+
+https://blog.adobe.com/en/2017/03/07/psych-201-more-lessons-with-youtubes-head-of-ux-research-sciences-rob-youmans.html
+
+
+KPIs:
+---
+
+https://uxcam.com/blog/top-50-mobile-app-kpis/
+
+======================
+
+3 types of onboarding experiences:
+---
+
+https://usabilitygeek.com/mobile-app-onboarding-how-to-do-it-right/
+
+https://www.smashingmagazine.com/2014/11/refining-your-mobile-onboarding-experience-using-visual-analytics/
+
+https://www.smashingmagazine.com/2016/06/complete-roadmap-building-delightful-onboarding-experience-mobile-app-users/
+
+Example:
+https://vimeo.com/161016937
+
+Benefits-oriented onboarding: Describes the benefits of using the app and informs the user on how to benefit from it.
+
+ - Limit yourself to showcasing a maximum of 3 key benefits
+ - Each slide must contain 1 benefit
+ - Prioritize to only showcase the main benefits
+ - Use consistent vocabulary
+ - Onboarding must be presented before any registration process
+ - Keep the onboarding process as brief as possible
+
+Function-oriented onboarding: Specifies the main functionality of the app, when you can use it and how.
+
+ - Do not explain obvious functionality
+ - Limit yourself to 3 slides with 1 functionality per slide
+ - Focus on helping the user get started
+
+Progressive onboarding: Relies on the fact that users learn more by doing something. Onboarding is presented during the actual usage of the application. For example, if they are on a screen that allows them to take a photo, then the related instructions appear in context, pointing towards the icon that triggers the phone’s camera.
+
+ - Use to show complex workflows
+ … hidden functionality
+ … or gesture-driven interaction
+
+
+---
+
+
+Patterns for presenting information:
+https://www.smashingmagazine.com/2014/11/refining-your-mobile-onboarding-experience-using-visual-analytics/
+---
+
+Inline Hinting / Coach Marks:
+
+Inline hinting is a technique that gives them the freedom to explore, while progressively disclosing various features. It educates them during the exploration phase, thereby connecting them more closely to your app in an unobtrusive fashion.
+
+Tutorials:
+
+A tutorial, like the one above, guides the user in an orderly fashion and promotes interaction. It includes short and to-the-point messages that are easily comprehended by the user. This keeps them engaged in the onboarding process, while educating them on the key features, yet moving forward. This makes the experience frictionless and greatly reduces the bounce rate.
+
+
+Best practices:
+
+1. Give an overview:
+Make sure that the connection between the information you provide during onboarding and how the user applies that information in their day-to-day experience is as clear as possible.
+
+2. Show the value:
+Pinpoint the value of your app and explain it in a few screens. Show that your app will give users what they want. Nothing else matters. Once you’ve brought them onboard, you can optimize the experience and engage them in future.
+
+3. Next steps:
+Present users with just the information they need to get to the next step in the application. This will be their guide and will make for a smooth onboarding experience.
+
+Measuring effectiveness (KPIs):
+ - Are users signing up after enjoying one month of free content?
+ - How engaged are they with your interactive tutorial?
+ - Are they abandoning your app? At what rate?
+ - What is the user’s first experience with navigating the screen like?
+ - Are they spending too much time on a certain screen?
+ - Are users dropping off after reaching a certain screen?
+ - Where is the friction?
+
+======================
+
+Data to gather:
+---
+Traffic to BNB features:
+ - Accounts: 
+ - Transfers: 
+ - Zelle: 
+ - Mobile Deposit: 
+
+Before and After BNB:
+- Number of interactions to get to Transfers
+- Average time to get to Transfers
+
+Engagement KPIs with old What's New:
+
+---
+
+More Wells Fargo branding is being removed from the Mobile App:
+ - Welcome Splash
+ - WF-branded Masthead
+
+An onboarding tutorial experience can inform users of the sweeping changes to navigation and reduce strain on working memory by calling out where their commonly-used tasks have gone. Simultaneously, accompanying major releases with an onboarding tutorial can help re-enforce the Wells Fargo brand and create a friendly, media-rich channel for communicating our rationale for updates.
+
+
+---
+
+https://uxplanet.org/design-of-onboarding-tutorial-greet-inform-engage-55c36c9b4999
+
+...for many people trying something new is a sort of stress which demands some effort and consideration, so a little help could make the decision-making process easier and more harmonic.
+
+Special tactics enable to correct possible inconveniences and make people more confident at the new place, which means they become productive and socialized with their colleagues faster, bringing benefits to the company.
+
+
+[Within the context of digital products,] onboarding is the number of techniques and interactions whose objective is to comfort users and give the first concise introduction of the product.
+
+Users have limited time which they are ready to devote to learning how the product works before starting actual interaction with it. Moreover, people have limited capacities of working memory, and setting the priorities, creators of the product decide which dose of information is needed for this or that stage instead of trying to give the big amount of data at once making the user confused or embarrassed.
+
+When you start to learn about a new product there’s often a tutorial, wizard, instructions or something.
+
+---
+
+What is onboarding?
+Onboarding tutorial is the set of screens which are shown to the user in case of the first interaction with the product. In the vast majority of cases, designers apply 3–4 screens telling the initial information about the product to the new user. App tutorial is the sign of respect to the user: it gives the quick insight into what problems the app solves, how it can help the user and what benefits it gives. Surely, it is a good technique of boosting usability from the first minutes of interaction if it’s informative and clear.
+
+Greeting:
+App tutorials set the first contact between the user and the app. It is an act of introduction, in most cases imitating real communication. It’s important to be extremely careful and make the greeting as short and quick as possible not to distract users too much from the essential information.
+
+Information:
+The tutorial is a tactic of user onboarding, so it should inform users about the benefits they get using this product or basic operations they are going to do. The most important information for a user to retain should be presented either at the beginning or end of the experience. (Youmans/Adobe)
+https://blog.adobe.com/en/2017/03/07/psych-201-more-lessons-with-youtubes-head-of-ux-research-sciences-rob-youmans.html
+
+Engagement:
+Another benefit of the tutorial is making it a foundation laid for building solid desirability of the product. Tutorials can quickly show the user the most beneficial sides of the products engaging them to try and tolerate with possibly hard first steps into unknown.
+
+Moreover, designed nicely, the tutorial provides the first insight into the style and appearance of the product which is based on the target audience research and becomes another hook boosting interest to see more.
+
+Three major perspectives:
+user needs/ wishes/ expectations,
+product nature,
+and business goals.
+
+Tutorials should be:
+dynamic, 
+edible,
+attractive to the target user.
+
+Custom images or illustrations:
+Most people perceive and decode images faster than words. It makes usage of illustrations logical and rational for app tutorials which have to give the information quickly. 
+
+Copywriting:
+Should be: concise, attractive and clear copy which applies the language appealing correctly to target audience and corresponding to the objectives set for the product.
+
+Motion:
+Motion makes interaction more dynamic, it is able to breathe life into the interface, amaze and catch user’s attention. One more good point is that animation can make the important details more noticeable.
+
+Clear page/screen indicator:
+Usually, tutorials consist of several screens, each devoted to one point or benefit to present. It’s vital to remember that from this very start of interaction users should know where they are and how long is the path. Page/screen indicator is a good and simple way to inform users about the flow of the process.
+
+Ability to skip
+Another thing to consider is the choice of skipping the tutorial. Not all the users need it, even using the product for the fist time, so for some products, it could be reasonable to give them the ability to skip the tutorial.
+
+
+Onboarding Tutorial / What's New:
+=================================
+
+Rationale:
+ - the reasons behind a design decision,
+ - the justification for it, 
+ - the other alternatives considered,
+ - the trade offs evaluated, and
+ - the argumentation that led to the decision.
+
+The Toulmin model:
+1. Claim is made;
+2. Supporting data are provided;
+3. Warrant (justification) provides evidence to the existing relations;
+4. Warrant can be supported by a backing;
+5. Model qualifiers (some, many, most, etc.) are provided;
+6. Possible rebuttals are also considered.
+
+
+1. Claim:
+
+
+Trying something new is a sort of stress which demands some effort and consideration, so a little help could make the decision-making process easier and more harmonic. 
+
+Our users rely on completing their desired tasks with minimal time, number of interactions, and change in established behavior.
+
+With sweeping changes being made to our existing mobile navigation, we want to inform customers that we've listened to their feedback, and ensure that they can easily find the new locations of their common tasks.
+
+Generally, we do not want to introduce any additional friction into the user experience and hope that our tested design decisions will be intuitive enough to grasp without instruction, but the scope in changes to information architecture and its affect on [# of total mobile users] argues that it may be worth re-introducing an improved What's New experience ensure that all users understand the changes to navigation.
+
+
+
+
+XD has no direct channel for communicating meaningful new changes and features to our Mobile App users.
+
+This means that we must rely on our designs being as self-explanatory and intuitive as possible so that users are not confused about how to complete a task or where to locate a feature.
+
+With significant changes being made to the existing mobile navigation, we need a high-resolution channel to inform users of 
+
+"What's New" is the our most robust existing medium: It is generally presented to all mobile users when they log into their Accounts view, and accompanies a major release.
+
+
+
+
+
+KPIs:
+---
+
+How many users are viewing the whole experience rather than closing it?
+
+
+
+
+
+#11 Session Length  (Before and after navigation overview)
+The amount of time that users spend on the app per session. Generally, the more time a user spends on the app, the better, but you may also want to look at session length as it relates to the number of crashes and uninstalls and see if there is a correlation.
+
+On the other hand, depending on your app’s functionality and goals, you may not need users to stay long to convert or take a desired action, and the number of session intervals, AOR, or depth of sessions may be a more useful KPI to track.
